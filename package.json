@@ -1,0 +1,19 @@
+{
+  "name": "suphomie-front-end-v2",
+  "version": "1.0.0",
+  "description": "The front end of the suphomie home automation app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbenyon/suphomie-front-end-v2.git"
+  },
+  "author": "Tom Benyon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tbenyon/suphomie-front-end-v2/issues"
+  },
+  "homepage": "https://github.com/tbenyon/suphomie-front-end-v2#readme"
+}
