@@ -1,8 +1,12 @@
 const express = require('express');
 const app = express();
 
-app.get('/', function (req, res) {
-    res.send('Hello World!')
+app.set('view engine', 'pug');
+app.set('views', __dirname + '/assets/views');
+app.locals.basedir = __dirname + '/public';
+
+app.get('/', function(req, res){
+    res.render('dashboard.pug');
 });
 
 const port = process.env.PORT || 3001;
