@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
+const Config = require("./config.json");
 
 app.set('view engine', 'pug');
 app.set('views', __dirname + '/assets/views');
-app.locals.basedir = __dirname + '/public';
+app.use(express.static('public'));
 
 app.get('/', function(req, res){
-    res.render('dashboard.pug');
+    res.render('dashboard.pug', {"app_key": Config.pusher.key});
 });
 
 const port = process.env.PORT || 3001;
