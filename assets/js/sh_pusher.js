@@ -1,3 +1,6 @@
+var $ = require("jquery");
+var Pusher = require("pusher-js");
+
 // Enable pusher logging - don't include this in production
 Pusher.logToConsole = false;
 

@@ -1,8 +1,9 @@
 # IDE config files
 .idea
 
-# Dependency directories
-node_modules
-
 # Config files
 config.json
+
+# built files
+public/bundle.js
+node_modules

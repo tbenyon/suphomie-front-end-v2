@@ -1,12 +1,10 @@
 doctype html
 head
     title Pusher Test
-    script(src='/js/jquery-3.2.0.min.js')
-    script(src='/js/pusher.min.js')
-    script(src='/js/pusher.js')
     script.
         window.sh = window.sh || {};
         window.sh.app_key = "#{app_key}";
+    script(src='/bundle.js')
 
 body
     h1 Dashboard
